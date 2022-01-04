@@ -119,8 +119,6 @@ line-height:calc(16 / 14);
 color:var(--second-color) ;
 padding-top: 32px;
 padding-bottom: 32px;
-
-    
 }
 
 .header-item:not(:last-child){
@@ -139,14 +137,13 @@ color: var(--accent-color) ;
 
 .contact-letter{
     margin-right: 10px;
-    color: inherit;
-    width: 16px;
-    height: 12px;
+    fill: currentColor;
+  
 }
 
 .contact-phone{
 margin-right: 10px;
-color: inherit;
+fill: currentColor;
 width: 10px;
 height: 16px;
 
@@ -366,6 +363,7 @@ line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--second-color);
+margin-bottom: 16px;
 }
 
 .icons-about{
@@ -418,7 +416,7 @@ color: var(--second-color);
 }
 
 .clients-title{
-    font-style:700;
+    font-weight:700;
 font-size: 36px;
 line-height:calc(42 / 36);
 color: var(--first-color);
@@ -520,7 +518,68 @@ display: block;
 .footer-link:hover, .footer-link:focus{
     color: grey;
 }
+
+.footer-title{
+font-weight: 700;
+font-size: 14px;
+line-height: calc(16 / 14);
+text-transform: uppercase;
+color: var(--other-color);
+display: block;
+margin-bottom: 20px;
+font-style: normal;
+}
+
+.footer-icons-list{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.footer-sotial{
+    width: 44px;
+    height: 44px;
+}
+.footer-sotial-link{
+    border-radius: 50%;
+   background-color: rgba(255, 255, 255, 0.1);
+display: flex;
+justify-content: center;
+align-items: center;
+width: 44px;
+height: 44px;
+}
+
+.footer-sotial-link:hover,
+.footer-sotial-link:focus{
+    background-color: var(--accent-color);
+}
+
+
+
+
+.footer-sotial:not(:last-child){
+    margin-right: 10px;
+}
+
+.footer-svg{
+    fill: var(--other-color);
+    width: 20px;
+    height: 20px;
+}
+
+.footer-wrap{
+    display: flex;
+    align-items: baseline;
+}
+.footer-logos{
+    margin-right: 70px;
+}
+
+
 /* Стилизация фильтров */
+
+
+
 .filters-btn:hover, .filters-btn:focus{
 color: var(--other-color);
 background-color: var(--accent-color);
@@ -537,7 +596,19 @@ border-radius: 4px;
 border:1px solid transparent;
 padding: 6px 22px;
 }
+
+.filters-btn:hover,
+.filters-btn:focus{
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.08),
+    0 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+
 /* Стилизация контенту */
+
+
+
 .content{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -556,6 +627,14 @@ padding: 6px 22px;
 .content-list{
     display: flex;
     flex-wrap: wrap;
+}
+
+.content-link:hover,
+.content-link:focus{
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16) ,
+    0 4px 4px rgba(0, 0, 0, 0.06),
+    0 1px 1px rgba(0, 0, 0, 0.12);
+    display: block;
 }
 
 .content-item{

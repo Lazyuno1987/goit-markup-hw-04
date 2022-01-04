@@ -119,7 +119,7 @@ line-height:calc(16 / 14);
 color:var(--second-color) ;
 padding-top: 32px;
 padding-bottom: 32px;
-display: block;
+
     
 }
 
@@ -131,13 +131,44 @@ display: block;
 .header-item .link:focus{
 color: var(--accent-color) ;
 }
+.link-letter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-letter{
+    margin-right: 10px;
+    color: inherit;
+    width: 16px;
+    height: 12px;
+}
+
+.contact-phone{
+margin-right: 10px;
+color: inherit;
+width: 10px;
+height: 16px;
+
+}
+
+.link-letter:hover,
+.link-letter:focus,
+.contact-phone:hover,
+.contact-phone:focus{
+    fill: var(--accent-color);
+}
+
+
+
 /* Стилизация main */
 .main{
     background: #2F303A;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/fon.jpg);
+    border-right-width: 1600px;
 
 }
 .main-title{
@@ -201,6 +232,7 @@ background-color: #188CE8;
 
 .hero-list{
     display: flex;
+    
 }
 
 
@@ -219,9 +251,43 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--second-color);
 max-width: 270px;
-
 }
-.hero-item:not(:last-child){
+/* .hero-item{
+    justify-content: center;
+   align-items: center;
+} */
+
+.hero-icons{
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    margin-bottom: 30px;
+    text-align: center;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   
+    
+}
+/* .hero-item{
+    align-items:center;
+    justify-content: center;
+    
+} */
+.hero-icons:not(:last-child){
+    margin-right: 30px;
+}
+
+.hero-antenna{
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.hero-list:not(:last-child){
     margin-right: 30px;
 }
 /* Стилизация pre-about */
@@ -302,6 +368,81 @@ letter-spacing: 0.03em;
 color: var(--second-color);
 }
 
+.icons-about{
+    display: flex;
+    justify-content: center;
+    padding-right: 32px;
+    padding-left: 32px;
+   
+}
+.icons-about-item{
+    width: 44px;
+    height: 44px;
+    display: flex;
+   
+}
+.icons-about-item:not(:last-child){
+    margin-right: 10px;
+}
+
+.icons-about-svg{
+  width: 22px;
+  height: 22px;
+  fill: #AFB1B8;
+}
+
+.icons-about-link{
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+}
+.icons-about-link:hover,
+.icons-about-link:focus{
+    background-color: var(--accent-color);
+}
+
+.icons-about-svg:focus,
+.icons-about-svg:hover{
+    fill: #FFFFFF;
+}
+
+/* Стилизация clients */
+
+.clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-title{
+    font-style:700;
+font-size: 36px;
+line-height:calc(42 / 36);
+color: var(--first-color);
+text-align: center;
+margin-bottom: 50px;
+}
+
+.clients-list{
+    display: flex;
+}
+
+.clients-link{
+    width: 170px;
+    height: 92px;
+    border-color: #AFB1B8;
+    border-radius: 4px;
+    border-width: 1px;
+    background-color: violet;
+    display: flex;
+}
+.clients-list:not(:last-child){
+    margin-right: 30px;
+}
+
 /* Стилизация footer */
 
 
@@ -330,9 +471,8 @@ color: grey;
     display: block;
     
 }
-/* .footer-list{
-    display: flex;
-} */
+
+
 
 .footer-item:not(:last-child){
     margin-bottom: 9px;

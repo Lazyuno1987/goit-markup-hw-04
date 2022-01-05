@@ -132,7 +132,6 @@ color: var(--accent-color) ;
 .link-letter{
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .contact-letter{
@@ -166,7 +165,9 @@ height: 16px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/fon.jpg);
-    border-width: 1600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .main-title{
@@ -251,10 +252,7 @@ letter-spacing: 0.03em;
 color: var(--second-color);
 max-width: 270px;
 }
-/* .hero-item{
-    justify-content: center;
-   align-items: center;
-} */
+
 
 .hero-icons{
     border-radius: 4px;
@@ -262,18 +260,12 @@ max-width: 270px;
     height: 120px;
     background: #F5F4FA;
     margin-bottom: 30px;
-    text-align: center;
-   padding-top: 25px;
-   padding-bottom: 25px;
-   
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* .hero-item{
-    align-items:center;
-    justify-content: center;
-    
-} */
-.hero-icons:not(:last-child){
+
+.hero-item:not(:last-child){
     margin-right: 30px;
 }
 
@@ -338,6 +330,7 @@ margin-bottom: 50px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 background: #FFFFFF;
+
 }
 
 .about-item:not(:nth-child(4n)){
@@ -388,7 +381,7 @@ margin-bottom: 16px;
 .icons-about-svg{
   width: 22px;
   height: 22px;
-  fill: #AFB1B8;
+  fill: currentColor;
 }
 
 .icons-about-link{
@@ -399,16 +392,18 @@ margin-bottom: 16px;
     height: 44px;
     align-items: center;
     justify-content: center;
+    color:#AFB1B8 ;
 }
 .icons-about-link:hover,
 .icons-about-link:focus{
     background-color: var(--accent-color);
+    color: #FFFFFF;
 }
 
-.icons-about-svg:focus,
+/* .icons-about-svg:focus,
 .icons-about-svg:hover{
-    fill: #FFFFFF;
-}
+
+} */
 
 /* Стилизация clients */
 
@@ -438,26 +433,30 @@ margin-bottom: 50px;
     border-width: 1px;
     border-style: solid;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #AFB1B8;
 }
 .clients-item:not(:last-child){
     margin-right: 30px;
 }
 
 .clients-svg{
-    fill:#AFB1B8;
-    margin: 16px 32px;
+    fill:currentColor;
     width: 106px;
     height: 60px;
+    
 }
 
-.clients-svg:hover,
+/* .clients-svg:hover,
 .clients-svg:focus{
     fill: var(--accent-color);
-}
+} */
 
-.clients-link:hover,
+.clients-link:hover, 
 .clients-link:focus{
     border-color:var(--accent-color);
+    color: var(--accent-color);
 }
 /* Стилизация footer */
 
